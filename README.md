@@ -1,4 +1,4 @@
-# TaskIt
+# Task It
 
 ## React and Typescript tasks app
 
