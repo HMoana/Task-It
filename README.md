@@ -76,7 +76,6 @@ The purpose of this project is to continue to build upon React experience, and i
 
 ### **Future improvements:**
 
-- Improve draggable and droppable function
 - Improve code smells
 
 ---

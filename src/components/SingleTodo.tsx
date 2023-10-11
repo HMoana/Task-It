@@ -55,6 +55,7 @@ const SingleTodo: React.FC<{
               onChange={(e) => setEditTodo(e.target.value)}
               className="todos__single--text"
               ref={inputRef}
+              placeholder="task"
             />
           ) : todo.isDone ? (
             <s className="todos__single--text">{todo.todo}</s>
@@ -76,7 +77,11 @@ const SingleTodo: React.FC<{
               <AiFillDelete />
             </span>
             <span className="icon" onClick={() => handleDone(todo.id)}>
-              <MdDone />
+              {todo.isDone ? (
+                <MdDone style={{ color: "green" }} />
+              ) : (
+                <MdDone style={{ color: "gray" }} />
+              )}
             </span>
           </div>
         </form>
